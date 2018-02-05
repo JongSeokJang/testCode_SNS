@@ -1,0 +1,27 @@
+{
+  "name": "testcode",
+  "version": "1.0.0",
+  "description": "",
+  "main": "user_update.js",
+  "directories": {
+    "lib": "lib"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/JongSeokJang/testCode_SNS.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/JongSeokJang/testCode_SNS/issues"
+  },
+  "homepage": "https://github.com/JongSeokJang/testCode_SNS#readme",
+  "dependencies": {
+    "current-week-number": "^1.0.7",
+    "date-utils": "^1.2.21",
+    "open-graph-scraper": "^3.1.4"
+  }
+}
