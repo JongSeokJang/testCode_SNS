@@ -1,7 +1,11 @@
+
+const express = require("express");
 const request   = require("request");
 const AWS       = require("aws-sdk");
 const http_aws_es = require("http-aws-es");
 const elasticsearch = require("elasticsearch");
+
+let app = express();
 
 
 let myCredentials = new AWS.EnvironmentCredentials('AWS');
@@ -37,7 +41,7 @@ docClient.scan(params, (err, data) =>{
     for (let ii in data.Items){
       let temp = {
         "index" : {
-          "_index": "test-domain",
+          "_index": "my_index",
           "_type" : "new",
           "_id" : ii.toString()
         }
